@@ -210,6 +210,22 @@ body {
     animation-delay: 2.1s, 3.1s;
 }
 
+.navbar a:nth-child(1) {
+    --i: 1;
+}
+
+.navbar a:nth-child(2) {
+    --i: 2;
+}
+
+.navbar a:nth-child(3) {
+    --i: 3;
+}
+
+.navbar a:nth-child(4) {
+    --i: 4;
+}
+
 /* .home-img .glowing-circle {
     position: relative;
     width: 100%;

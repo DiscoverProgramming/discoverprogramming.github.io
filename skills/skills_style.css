@@ -33,8 +33,7 @@ body {
     pointer-events: none;
     opacity: 0;
     animation: slideTop 1s ease forwards;
-    
- }
+}
 
 .navbar a {
     display: inline-block;
@@ -55,8 +54,74 @@ body {
     -webkit-background-clip: text;
 }
 
-#skills_group #python {
-    
+#skills_group {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    animation: slideRight 1s ease forwards;
+}
+
+#skills_group div {
+    color: white;
+    margin: 20px;
+    padding: 30px;
+    width: calc(50% - 40px);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    animation: zoomIn 1s ease forwards;
+    animation-delay: calc(.2s * var(--i)); /* Add this line */
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+#python {
+    --i: 1; /* Add this line */
+    background: linear-gradient(45deg, #f06, #3cf);
+}
+
+#java {
+    --i: 2; /* Add this line */
+    background: linear-gradient(90deg, #f06, #3cf);
+}
+
+#html {
+    --i: 3; /* Add this line */
+    background: linear-gradient(135deg, #f06, #3cf);
+}
+
+#css {
+    --i: 4; /* Add this line */
+    background: linear-gradient(155deg, #f06, #3cf);
+}
+
+#skills_group h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#skills_group p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.navbar a:nth-child(1) {
+    --i: 1;
+}
+
+.navbar a:nth-child(2) {
+    --i: 2;
+}
+
+.navbar a:nth-child(3) {
+    --i: 3;
+}
+
+.navbar a:nth-child(4) {
+    --i: 4;
 }
 
 /* KEYFRAMES ANIMATION */
