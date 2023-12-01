@@ -331,3 +331,42 @@ body {
         transform: translateY(0);
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        padding: 10px 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .home-context h1 {
+        font-size: 40px;
+    }
+
+    .home-context h3 {
+        font-size: 24px;
+    }
+
+    .home-context p {
+        font-size: 14px;
+    }
+
+    .btn {
+        width: 150px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .home-img {
+        width: 300px;
+        height: 300px;
+    }
+}
