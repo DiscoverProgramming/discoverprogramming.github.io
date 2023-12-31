@@ -51,6 +51,7 @@ form input[type="number"] {
     border: 1px solid #000000;
     border-radius: 5px;
     margin-left: 20px;
+    width: 100px;
 }
 
 #rpm_input {
@@ -108,10 +109,15 @@ form input[type="number"] {
     }
 
     #submit {
+        padding: 5px 10px;
+        background-color: #1a237e;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        border: 1px solid #000000;
+        border-radius: 5px;
         margin-left: 0px;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
+        /* margin-left: 20px; */
         width: 100%;
     }
 
@@ -121,7 +127,7 @@ form input[type="number"] {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 97%;
     }
 
     .input-group {
@@ -159,12 +165,14 @@ form input[type="number"] {
     }
 
     #submit {
+        padding: 5px 10px;
+        background-color: #1a237e;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        border: 1px solid #000000;
+        border-radius: 5px;
         margin-left: 0px;
-        margin-bottom: 10px;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
     }
 
     #rpm_input {
@@ -174,7 +182,7 @@ form input[type="number"] {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 9.4%;
     }
 
     .input-group {
@@ -218,10 +226,11 @@ form input[type="number"] {
     #rpm_input {
         margin-left: 0px;
         margin-right: 0px;
+        margin-bottom: 0px;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 100%;
+        width: 10%;
     }
 
     .input-group {
