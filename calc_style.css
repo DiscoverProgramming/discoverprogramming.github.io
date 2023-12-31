@@ -1,0 +1,237 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+    background-color: #ffffff;
+}
+
+#RPM_CALC_TITLE {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#RPM_CALC_DESC {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+form label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+form input[type="number"] {
+    width: 100px;
+    padding: 0.5em;
+    margin-right: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+#submit {
+    padding: 5px 10px;
+    background-color: #1a237e;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+#rpm_input {
+    width: 100px;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#maindiv {
+    border: 1px solid #bbbbbb;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add drop shadow effect */
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.input-group input {
+    flex-grow: 1;
+}
+
+.input-group i {
+    margin-right: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    #RPM_CALC_TITLE {
+        font-size: 24px;
+    }
+
+    #RPM_CALC_DESC {
+        font-size: 14px;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form label, form input[type="number"], #rpm_input {
+        margin-bottom: 10px;
+    }
+
+    #submit {
+        margin-left: 0px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #rpm_input {
+        margin-left: 0px;
+        margin-right: 0px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .input-group {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .centered-content {
+        flex-direction: column;
+    }
+}
+
+
+/* Medium devices (tablets, 601px and up) */
+@media only screen and (min-width: 601px) {
+    #RPM_CALC_TITLE {
+        font-size: 24px;
+    }
+
+    #RPM_CALC_DESC {
+        font-size: 14px;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form label,
+    form input[type="number"],
+    #rpm_input {
+        margin-bottom: 10px;
+    }
+
+    #submit {
+        margin-left: 0px;
+        margin-bottom: 10px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #rpm_input {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .input-group {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .centered-content {
+        flex-direction: column;
+    }
+}
+
+/* Large devices (desktops, 1025px and up) */
+@media only screen and (min-width: 1025px) {
+    #RPM_CALC_TITLE {
+        font-size: 30px;
+    }
+
+    #RPM_CALC_DESC {
+        font-size: 18px;
+    }
+
+    form {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #submit {
+        padding: 5px 10px;
+        background-color: #1a237e;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+
+    #rpm_input {
+        margin-left: 0px;
+        margin-right: 0px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .input-group {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+    }
+
+    .centered-content {
+        flex-direction: row;
+    }
+}
