@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RPM Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calc_style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1 id="RPM_CALC_TITLE">RPM Calculator</h1>
+        <h1 id="RPM_CALC_DESC">Curious about your engine's RPM? Uncover the answer with our easy-to-use calculator. Simply enter your vehicle's speed, tire diameter, rear gear ratio, and transmission gear ratio to find out!</h1>
+        <div id="maindiv">
+            <form>
+                <div class="input-group">
+                    <label for="speed">Speed (MPH):</label>
+                    <input type="number" id="speed" name="speed"value="0">
+                    <i class='bx bx-car'></i>
+                </div>
+                <div class="input-group">
+                    <label for="tire_diameter">Tire Diameter (Inches):</label>
+                    <input type="number" id="tire_diameter" name="tire_diameter"value="0">
+                    <i class='bx bx-ruler'></i>
+                </div>
+                <div class="input-group">
+                    <label for="gear_ratio">Rear Gear Ratio:</label>
+                    <input type="number" id="gear_ratio" name="gear_ratio"value="0">
+                    <i class='bx bx-cog' ></i>
+                </div>
+                <div class="input-group">
+                    <label for="transmission_gear_ratio">Transmission Gear Ratio:</label>
+                    <input type="number" id="transmission_gear_ratio" name="transmission_gear_ratio" value="0">
+                    <i class='bx bx-cog' ></i>
+                </div>
+            </form>
+
+            <div class="centered-content">
+                <input type="text" id="rpm_input" placeholder="RPM" disabled>
+                <input id="submit" type="submit" value="Calculate" onclick="CalcRPM();">
+            </div>
+        </div>
+    </div>
+    <script src="calc_app.js"></script>
+</body>
+</html>
