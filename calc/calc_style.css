@@ -104,7 +104,9 @@ form input[type="number"] {
         align-items: center;
     }
 
-    form label, form input[type="number"], #rpm_input {
+    form label, i,
+    form input[type="number"],
+    #rpm_input {
         margin-bottom: 10px;
     }
 
@@ -158,7 +160,7 @@ form input[type="number"] {
         align-items: center;
     }
 
-    form label,
+    form label, i,
     form input[type="number"],
     #rpm_input {
         margin-bottom: 10px;
@@ -210,6 +212,12 @@ form input[type="number"] {
     form {
         flex-direction: row;
         align-items: center;
+    }
+
+    form label, i,
+    form input[type="number"],
+    #rpm_input {
+        margin-bottom: 10px;
     }
 
     #submit {
